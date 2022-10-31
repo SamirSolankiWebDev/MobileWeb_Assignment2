@@ -1,0 +1,46 @@
+header{
+    display: block;
+    width: 100%;
+    background-color: #eee;
+    padding: 10px 0;
+}
+header .logo{
+    width: 80px;
+}
+
+/* css for navigation starts here */
+#mobile-hamburger{
+    display: block;
+}
+nav{
+    display: none;
+}
+nav .row{
+    display: grid;
+}
+
+nav .row a {
+    color: red;
+}
+nav .row [class*="col-"]{
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 640px) {
+    #mobile-hamburger{
+        display: none;
+    }
+    nav{
+        display: block !important;
+    }
+    nav .row{
+        display: flex;
+    }
+    nav .row [class*="col-"]{
+        margin-bottom: 0;
+        border: none;
+    }
+}
+
+/* css for navigation ends here */ 

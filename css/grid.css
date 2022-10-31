@@ -1,3 +1,181 @@
+.bg-lightgrey{
+    background-color: #cfdce1;
+}
+.bg-lightred {
+    background-color: #db4252;
+}
+.bg-lightyellow {
+    background-color: #ffcf51;
+}
+.bg-lightcream {
+    background-color: #fbefdc;
+}
+.bg-orange{
+    background-color: #ff4600;
+}
+.bg-offorange{
+    background-color: #ffd6c7;
+}
+.bg-lightpurple {
+    background-color: #e4def2;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+[class*="col-"] {
+    /* float: left; */
+    padding: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+[class*="col-"]:first-child {
+    margin-left: 0;
+}
+
+
+.bz-row {
+    margin-bottom: 2rem;
+}
+.bz-left img {
+    padding: 16px 0;
+}
+
+.bz-left a {
+    color: #000;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+}
+
+.bz-left a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.bz-right .abt-block {
+    margin-bottom: 32px;
+}
+
+.bz-right .abt-block:last-child {
+    margin-bottom: 0;
+}
+
+.bz-right .abt-block .abt-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.bz-right .abt-block .abt-card-list .abt-card-item {
+    max-width: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+}
+
+
+
+.grid-layout {
+    display: grid;
+}
+
+.grid-layout .row>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    min-height: 150px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.grid-layout .row>div h2 {
+    font-size: 2.5rem;
+}
+
+.grid-layout .row>div p {
+    font-size: 1rem;
+}
+
+
+/* business page */
+.abt-block .row .col {
+    padding: 0;
+    border: none;
+}
+.abt-block .row .col:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 640px) {
+    [class*="col-"] {
+        margin-left: 1%;
+    }
+
+    .col-1 {
+        width: calc((100% - 11%) / 12);
+    }
+
+    .col-2 {
+        width: calc(2 * ((100% - 11%) / 12) + (1 * 1%));
+    }
+
+    .col-3 {
+        width: calc(3 * ((100% - 11%) / 12) + (2 * 1%));
+    }
+
+    .col-4 {
+        width: calc(4 * ((100% - 11%) / 12) + (3 * 1%));
+    }
+
+    .col-5 {
+        width: calc(5 * ((100% - 11%) / 12) + (4 * 1%));
+    }
+
+    .col-6 {
+        width: calc(6 * ((100% - 11%) / 12) + (5 * 1%));
+    }
+
+    .col-7 {
+        width: calc(7 * ((100% - 11%) / 12) + (6 * 1%));
+    }
+
+    .col-8 {
+        width: calc(8 * ((100% - 11%) / 12) + (7 * 1%));
+    }
+
+    .col-9 {
+        width: calc(9 * ((100% - 11%) / 12) + (8 * 1%));
+    }
+
+    .col-10 {
+        width: calc(10 * ((100% - 11%) / 12) + (9 * 1%));
+    }
+
+    .col-11 {
+        width: calc(11 * ((100% - 11%) / 12) + (10 * 1%));
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .bz-row>div {
+        height: 100%;
+    }
+    
 }
